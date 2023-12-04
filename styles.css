@@ -1,0 +1,63 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #F5CCA0; /* Lightest color for the background */
+}
+
+.container {
+    text-align: center;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    grid-gap: 5px;
+    margin-top: 20px;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #6B240C; /* Dark color for the cell borders */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    cursor: pointer;
+    background-color: #E48F45; /* Medium color for the cell background */
+    color: #994D1C; /* Medium color for the cell text */
+    transition: background-color 0.3s ease;
+    border-radius: 10px;
+}
+
+.cell:hover {
+    background-color: #994D1C; /* Medium color for the cell background on hover */
+    color: #F5CCA0; /* Lightest color for the cell text on hover */
+}
+
+.status {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #6B240C; /* Dark color for the status text */
+}
+
+.reset-button {
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #994D1C; /* Medium color for the button background */
+    color: #F5CCA0; /* Lightest color for the button text */
+    border: none;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.reset-button:hover {
+    background-color: #E48F45; /* Darker color for the button background on hover */
+}
